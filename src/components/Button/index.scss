@@ -9,7 +9,7 @@
   font-size: var(--smaller-size);
   font-weight: bold;
   background: var(--bg);
-  border: 1px solid var(--border, var(--bg));
+  border: 0.1em solid var(--border, var(--bg));
   cursor: pointer;
   outline: none;
   transition: background-color 0.05s, border 0.05s, color 0.05s, transform 0.05s;
@@ -49,13 +49,18 @@
   }
 
   &.btn--transparent:hover {
-    --color: var(--primary);
-    --border: var(--primary);
+    --color: var(--primary-light);
+    --border: var(--primary-light);
   }
 
   &.btn--transparent:focus {
     --color: var(--primary-light);
     --border: var(--primary-light);
+  }
+
+  &.btn--transparent:active {
+    --color: var(--primary);
+    --border: var(--primary);
   }
 
   &.btn--transparent:disabled {
@@ -82,36 +87,36 @@
 
     //Transparent case
 
-    &--#{$type}.btn--transparent {
+    &.btn--#{$type}.btn--transparent {
       --bg: var(--white);
       --color: var(--#{$type});
       --border: var(--#{$type});
     }
 
-    &--#{$type}:hover.btn--transparent {
+    &.btn--#{$type}:hover.btn--transparent {
       --bg: var(--white);
       --color: var(--#{$type}--light);
       --border: var(--#{$type}--light);
     }
 
-    &--#{$type}:focus.btn--transparent {
+    &.btn--#{$type}:focus.btn--transparent {
       --bg: var(--white);
       --color: var(--#{$type}--light);
       --border: var(--#{$type}--light);
     }
 
-    &--#{$type}:active.btn--transparent {
+    &.btn--#{$type}:active.btn--transparent {
       --bg: var(--white);
       --color: var(--#{$type});
       --border: var(--#{$type});
     }
   }
 
-  &--uppercase {
+  &.btn--uppercase {
     text-transform: uppercase;
   }
 
-  &--block {
+  &.btn--block {
     display: block;
   }
 }

@@ -1,0 +1,29 @@
+.btnTall {
+  --bg: var(--light-grey);
+  --color: var(--dark-green);
+
+  min-height: 9em;
+  min-width: 5em;
+  font-size: var(--font-base-size);
+  background-color: var(--bg);
+  background-image: url(./icon.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--color);
+  border: 0.1em solid var(--bg);
+  cursor: pointer;
+  outline: none;
+  transition: background 0.05s, border 0.05s, color 0.05s, transform 0.05s;
+  transform: scale(1);
+}
+
+.btnTall:hover {
+  --bg: var(--green);
+  background-image: url(./icon-hover.svg);
+}
+
+.btnTall:active {
+  --bg: var(--dark-green);
+
+  transform: scale(0.97);
+}

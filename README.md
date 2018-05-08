@@ -2,6 +2,9 @@
 
 Here is the it-academy poltal frontend repository.
 
+## Helpful links
+[Figma design](https://www.figma.com/file/KTGZVVmfXJFqJH6OL9xeoBy0/IT-Academy)
+
 ## Tools used
 
 This is based one the mutliple tools to preserve some code styles as well as the formatting.
