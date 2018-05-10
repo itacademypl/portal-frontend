@@ -1,6 +1,6 @@
 # portal-frontend
 
-Here is the it-academy poltal frontend repository.
+Here is the it-academy portal frontend repository.
 
 ## Helpful links
 [Figma design](https://www.figma.com/file/KTGZVVmfXJFqJH6OL9xeoBy0/IT-Academy)
