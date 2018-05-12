@@ -2,9 +2,9 @@ import './base'
 import Button from './components/Button'
 
 function htmlToElement(html) {
-  const template = document.createElement('template');
-  template.innerHTML = html.trim();
-  return template.content.firstChild;
+  const template = document.createElement('template')
+  template.innerHTML = html.trim()
+  return template.content.firstChild
 }
 
 const renderToDom = (selector, component) => {

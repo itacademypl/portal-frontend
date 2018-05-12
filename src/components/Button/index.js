@@ -4,12 +4,12 @@ const TYPES = {
   danger: 'btn--danger',
   success: 'btn--success',
   warning: 'btn--warning',
-  info: 'btn--info'
+  info: 'btn--info',
 }
 
 let id = 0
 
-const getColorByType = (type) => TYPES[type] || ''
+const getColorByType = type => TYPES[type] || ''
 
 class Button {
   constructor(props) {
@@ -25,8 +25,14 @@ class Button {
 
   render() {
     const { text = '', classes = '', type = '', uppercase = false } = this.props
-    const mergedClassNames = [classes, uppercase ? 'btn--uppercase' : '', getColorByType(type)].join(' ')
-    return `<button data-id=${this.id} class="btn ${mergedClassNames}">${text}</button>`
+    const mergedClassNames = [
+      classes,
+      uppercase ? 'btn--uppercase' : '',
+      getColorByType(type),
+    ].join(' ')
+    return `<button data-id=${
+      this.id
+    } class="btn ${mergedClassNames}">${text}</button>`
   }
 }
 

@@ -17,11 +17,14 @@
     "start": "run-p dev",
     "test": "jest ./src",
     "test:watch": "npm test -- --watch",
-    "eslint": "eslint ./src",
-    "stylelint": "stylelint ./src",
-    "lint": "run-p eslint stylelint",
-    "lint:fix": "npm run eslint -- --fix && npm run stylelint -- --fix ",
-    "prebuild": "run-p lint:fix test",
+    "lint:js": "eslint ./src",
+    "lint:css": "stylelint ./src",
+    "lint": "run-p lint:*",
+    "ci":
+      "run-p \"lint:js -- --max-warnings 0\" \"lint:css -- --max-warnings 0\" test",
+    "prettier": "prettier --write './**/*.{json,md,css}'",
+    "format": "run-p prettier \"lint:* -- --fix\"",
+    "prebuild": "run-p format test",
     "build": "parcel build ./src/index.html"
   },
   "dependencies": {
@@ -44,6 +47,7 @@
     "node-sass": "^4.9.0",
     "npm-run-all": "^4.1.2",
     "parcel-bundler": "1.7.1",
+    "parcel-plugin-eslint": "^1.0.4",
     "prettier": "^1.12.1",
     "regenerator-runtime": "^0.11.1",
     "stylelint": "^9.2.0",

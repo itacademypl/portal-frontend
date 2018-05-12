@@ -3,6 +3,7 @@
 Here is the it-academy portal frontend repository.
 
 ## Helpful links
+
 [Figma design](https://www.figma.com/file/KTGZVVmfXJFqJH6OL9xeoBy0/IT-Academy)
 
 ## Tools used
@@ -21,13 +22,13 @@ Tools that are included are:
 
 ## Get started
 
-1. Install Node JS.
-   Google for nodejs and install latest version of the node.js from the website
-2. Go to the root of the repository using command line tool your choice.
-3. Run `npm install -g yarn`
-4. Run `yarn install`
-5. Run `yarn start`
-6. Open browser with address: `localhost:1234`
+1.  Install Node JS.
+    Google for nodejs and install latest version of the node.js from the website
+2.  Go to the root of the repository using command line tool your choice.
+3.  Run `npm install -g yarn`
+4.  Run `yarn install`
+5.  Run `yarn start`
+6.  Open browser with address: `localhost:1234`
 
 ## Scripts
 
@@ -43,10 +44,10 @@ Automatically detects changes to your code and CSS and refreshes the page
 Runs all unit tests. With `:watch` watches for the test changes and automatically
 reruns changed tests.
 
-### `yarn lint` adn `yarn lint:fizx`
+### `yarn lint` and `yarn format`
 
 Checks the code for wrong formatting, possible bugs and bad practices etc.
-`:fix` same thing but it first try to fix issues, that automatically fixable
+`format` same thing but it first try to fix issues, that automatically fixable
 and then show issues which are left afterwards.
 
 ### `yarn build`

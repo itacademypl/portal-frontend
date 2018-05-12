@@ -1,11 +1,11 @@
 .statisticBox {
-  --bg: var(--dark-green);
+  --bg: var(--primary);
   --color: var(--white);
 
   height: 150px;
   width: 400px;
-  font-size: var (--regular-size);
-  font-family: var (--font-family);
+  font-size: var(--regular-size);
+  font-family: var(--font-family);
   background-color: var(--bg);
   color: var(--color);
   display: flex;
@@ -13,55 +13,63 @@
   justify-content: space-evenly;
   align-content: center;
   font-weight: bold;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
   transition: background-color 0.05s;
-  position: relative; 
-} 
-
-.statisticBox:hover{
-  --bg: var(--green);
+  position: relative;
 }
 
-.statisticBox--payments{
+.statisticBox:hover {
+  --bg: var(--primary-light);
+}
+
+.statisticBox--success:hover {
+  --bg: var(--success);
+}
+
+.statisticBox--success:hover {
+  --bg: var(--success--light);
+}
+
+.statisticBox--warning {
   --bg: var(--dark-yellow);
 }
 
-.statisticBox--payments:hover{
+.statisticBox--warning:hover {
   --bg: var(--yellow);
 }
 
-.statisticBox--requests{
+.statisticBox--purple {
   --bg: var(--dark-purple);
 }
 
-.statisticBox--requests:hover{
+.statisticBox--purple:hover {
   --bg: var(--purple);
 }
 
-.statisticBox_icon{
+.statisticBox_icon {
   position: absolute;
   right: 1em;
   top: 1em;
   height: 42px;
-  width: 42px; 
-  background-color: rgba(255, 255, 255, 0.25); 
+  width: 42px;
+  background-color: rgba(255, 255, 255, 0.25);
   border-radius: 50%;
   background-image: url(./new-students.svg);
   background-position: 10px 8px;
   background-repeat: no-repeat;
 }
 
-.statisticBox_icon--payments{
+.statisticBox_icon--payments {
   background-image: url(./new-payments.svg);
   background-position: center;
 }
 
-.statisticBox_icon--requests{
+.statisticBox_icon--requests {
   background-image: url(./new-requests.svg);
   background-position: 7.25px 8.25px;
 }
 
-.statisticBox_counter{
+.statisticBox__counter {
   height: 100px;
   display: flex;
   justify-content: center;
@@ -69,9 +77,7 @@
   text-shadow: 2px 0px 2px rgba(0, 0, 0, 0.1);
 }
 
-.statisticBox_header{
+.statisticBox__header {
   display: flex;
   justify-content: center;
 }
-
-
