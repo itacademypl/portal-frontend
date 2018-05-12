@@ -22,7 +22,7 @@
   --bg: var(--primary-light);
 }
 
-.statisticBox--success:hover {
+.statisticBox--success {
   --bg: var(--success);
 }
 
