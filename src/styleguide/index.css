@@ -14,3 +14,8 @@ body {
 .container--bordered {
   border: 1px solid var(--grey);
 }
+
+.container--flex {
+  display: flex;
+  flex-wrap: wrap;
+}

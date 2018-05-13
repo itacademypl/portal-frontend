@@ -74,11 +74,11 @@
     }
 
     &--#{$type}:hover {
-      --bg: var(--#{$type}--light);
+      --bg: var(--#{$type}-light);
     }
 
     &--#{$type}:focus {
-      --bg: var(--#{$type}--light);
+      --bg: var(--#{$type}-light);
     }
 
     &--#{$type}:active {
@@ -95,14 +95,14 @@
 
     &.btn--#{$type}:hover.btn--transparent {
       --bg: var(--white);
-      --color: var(--#{$type}--light);
-      --border: var(--#{$type}--light);
+      --color: var(--#{$type}-light);
+      --border: var(--#{$type}-light);
     }
 
     &.btn--#{$type}:focus.btn--transparent {
       --bg: var(--white);
-      --color: var(--#{$type}--light);
-      --border: var(--#{$type}--light);
+      --color: var(--#{$type}-light);
+      --border: var(--#{$type}-light);
     }
 
     &.btn--#{$type}:active.btn--transparent {
