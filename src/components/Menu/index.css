@@ -1,0 +1,102 @@
+.menu {
+  --bg: var(--primary);
+  --color: var(--white);
+
+  background-color: var(--bg);
+  color: var(--color);
+  min-width: 150px;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.menu__item {
+  font-family: var(--font-family);
+  font-size: var(--regular-size);
+  font-weight: bold;
+  padding-top: 1.15em;
+  padding-bottom: 1.15em;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  margin: 1px 0;
+}
+
+.menu__item:hover {
+  background-color: #5e8dd7;
+}
+
+.menu__item:active {
+  background-color: var(--white);
+  color: var(--primary);
+  box-shadow: 3px 0 2px rgba(54, 112, 205, 0.1);
+  border-bottom: 2px solid var(--primary);
+}
+
+.menu__item:active::after {
+  border-radius: 0 25px 25px 0;
+  position: absolute;
+  content: '';
+  background: var(--white);
+  box-shadow: 3px 0 2px rgba(54, 112, 205, 0.1);
+  height: 100%;
+  width: 30px;
+  right: -20px;
+  top: 0;
+}
+
+.menu__item::before {
+  content: '';
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  padding: 0.6em 2.85em;
+}
+
+.menu__item--groupIcon::before {
+  background-image: url(./group.svg);
+}
+
+.menu__item--teacherIcon::before {
+  background-image: url(./teacher.svg);
+}
+
+.menu__item--questionIcon::before {
+  background-image: url(./question.svg);
+}
+
+.menu__item--presentationGrowIcon::before {
+  background-image: url(./presentation-grow.svg);
+}
+
+.menu__item--personIcon::before {
+  background-image: url(./person.svg);
+}
+
+.menu__item--budgetIcon::before {
+  background-image: url(./budget.svg);
+}
+
+.menu__item--groupIcon:active::before {
+  background-image: url(./group-active.svg);
+}
+
+.menu__item--teacherIcon:active::before {
+  background-image: url(./teacher-active.svg);
+}
+
+.menu__item--questionIcon:active::before {
+  background-image: url(./question-active.svg);
+}
+
+.menu__item--presentationGrowIcon:active::before {
+  background-image: url(./presentation-grow-active.svg);
+}
+
+.menu__item--personIcon:active::before {
+  background-image: url(./person-active.svg);
+}
+
+.menu__item--budgetIcon:active::before {
+  background-image: url(./budget-active.svg);
+}
