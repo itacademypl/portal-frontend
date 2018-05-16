@@ -1,0 +1,50 @@
+.btnSupport {
+  border-radius: 1.71em;
+  background-color: var(--white);
+  color: #1AA8FF;
+  font-size: var(--regular-size);
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+  position: relative;
+  width: 11.64em;
+  height: 3.57em;
+  box-sizing: border-box;
+}
+
+.btnSupport::before {
+  content: "";
+  background-image: url('./conversation-white-blue.svg');
+  background-repeat: no-repeat;
+  background-position: center; 
+  position: absolute;
+  width: 2.44em;
+  height: 2.44em;
+  left: 1.5em;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.btnSupport > span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: var(--regular-size);
+}
+
+.btnSupport:hover,
+.btnSupport:active {
+  background-color: var(--light-blue);
+}
+
+.btnSupport:hover::before,
+.btnSupport:active::before {
+  background-image: url('./conversation-blue-white.svg');
+}
+
+.btnSupport:active > span {
+  top: 52%;
+}

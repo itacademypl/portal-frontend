@@ -19,3 +19,7 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
+
+.bg--blue {
+  background-color: var(--blue);
+}
