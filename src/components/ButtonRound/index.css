@@ -1,0 +1,53 @@
+.roundBtn{
+  --bg: var(--light-grey);
+
+  height: 3.6em;
+  width: 3.6em;
+  border-radius: 50%;
+  background-color: var(--bg);
+  border: 0.1em solid var(--bg);
+  outline: none;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.roundBtn:hover{
+  --bg: var(--grey);
+}
+
+.roundBtn--messageIcon {
+  background-image: url(./message.svg);
+}
+
+.roundBtn--bellIcon{
+  background-image: url(./bell.svg);
+}
+
+.roundBtn--arrowLeftIcon{
+  background-image: url(./arrow-left.svg);
+}
+
+.roundBtn--arrowRightIcon{
+  background-image: url(./arrow-right.svg);
+}
+
+.roundBtn.roundBtn--messageIconDanger{
+  background-image: url(./message-danger.svg);
+}
+
+.roundBtn.roundBtn--bellIconDanger{
+  background-image: url(./bell-danger.svg);
+}
+
+.roundBtn.roundBtn--messageIconDanger::after, .roundBtn.roundBtn--bellIconDanger::after{
+  position: absolute;
+  top:2px;
+  content: "";
+  height: 0.6em;
+  width: 0.6em;
+  background-color: #FF5847;
+  border-radius: 50%;
+  right: 0;
+  border: 0.2em solid white;
+}
