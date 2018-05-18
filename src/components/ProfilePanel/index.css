@@ -29,10 +29,10 @@
 
 .dropdown__header::before, .dropdown__header--open::before {
   content: "";
-  height: 5rem;
-  width: 5rem;
+  height: 3.57em;
+  width: 3.57em;
   border-radius: 50%;
-  border: 0.3rem solid var(--white);
+  border: 0.2em solid var(--white);
   background-image: url(./profile-icon.svg);
   margin-right: 1.1rem;
 }
@@ -43,8 +43,8 @@
 
 .dropdown__header__openButton {
   content: "";
-  height: 21;
-  width: 21;
+  height: 21px;
+  width: 21px;
   border-radius: 50%;
   background-color: var(--light-grey);
   position: absolute;
