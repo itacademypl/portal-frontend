@@ -1,4 +1,4 @@
-.roundButton{
+.roundBtn{
   --bg: var(--light-grey);
 
   height: 3.6em;
@@ -7,37 +7,40 @@
   background-color: var(--bg);
   border: 0.1em solid var(--bg);
   outline: none;
-  background-image: url(./message.svg);
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
 }
 
-.roundButton:hover{
+.roundBtn:hover{
   --bg: var(--grey);
 }
 
-.roundButton__warning{
+.roundBtn--messageIcon {
+  background-image: url(./message.svg);
+}
+
+.roundBtn--bellIcon{
   background-image: url(./bell.svg);
 }
 
-.roundButton__arrowLeft{
+.roundBtn--arrowLeftIcon{
   background-image: url(./arrow-left.svg);
 }
 
-.roundButton__arrowRight{
+.roundBtn--arrowRightIcon{
   background-image: url(./arrow-right.svg);
 }
 
-.roundButton.roundButton--new{
+.roundBtn.roundBtn--messageIconDanger{
   background-image: url(./message-danger.svg);
 }
 
-.roundButton.roundButton__warning--new{
+.roundBtn.roundBtn--bellIconDanger{
   background-image: url(./bell-danger.svg);
 }
 
-.roundButton.roundButton--new::after, .roundButton.roundButton__warning--new::after{
+.roundBtn.roundBtn--messageIconDanger::after, .roundBtn.roundBtn--bellIconDanger::after{
   position: absolute;
   top:2px;
   content: "";
