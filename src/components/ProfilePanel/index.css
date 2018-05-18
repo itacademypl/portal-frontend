@@ -1,0 +1,115 @@
+.dropdown {
+  position: relative;
+  background-color: var(--white);
+  user-select: none;
+  font-family: var(--font-family);
+  font-size: var(--regular-size);
+  font-weight: bold;
+}
+
+.dropdown__header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-width: 300px;
+  background-color: var(--white);
+  color: var(--dark-grey);
+  padding-top: 2.1rem;
+  padding-bottom: 1.8rem;
+  padding-left: 2.5rem;
+  border-right: 2px solid var(--white);
+  border-bottom: 2px solid var(--white);
+  border-left: 2px solid var(--white);
+}
+
+.dropdown__header--open {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+.dropdown__header::before, .dropdown__header--open::before {
+  content: "";
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  border: 0.3rem solid var(--white);
+  background-image: url(./profile-icon.svg);
+  margin-right: 1.1rem;
+}
+
+.dropdown__header--open::before {
+  border: 0.3rem solid var(--light-blue);
+}
+
+.dropdown__header__openButton {
+  content: "";
+  height: 21;
+  width: 21;
+  border-radius: 50%;
+  background-color: var(--light-grey);
+  position: absolute;
+  right: 1.3rem;
+  background-image: url(./arrow-down.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.dropdown__header__openButton--open {
+  background-image: url(arrow-up.svg);
+}
+
+.dropdown__content {
+  display: none;
+}
+
+.dropdown__content--open {
+  display: block;
+}
+
+.dropdown__item {
+  display: flex;
+  align-items: center;
+  padding: 1.2rem;
+  color: var(--blue);
+  background-color: var(--light-blue);
+  border-right: 2px solid var(--white);
+  border-bottom: 2px solid var(--white);
+  border-left: 2px solid var(--white);
+}
+
+.dropdown__item:hover {
+  background-color: var(--blue);
+  color: white;
+}
+
+.dropdown__item::before {
+  content: '';
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  padding: 1.2rem 3.6rem 1.2rem 2.8rem;
+}
+
+.dropdown__item--userIcon::before {
+  background-image: url(./user-icon.svg);
+}
+
+.dropdown__item--pencilIcon::before {
+  background-image: url(./pencil-edit.svg);
+}
+
+.dropdown__item--passwordIcon::before {
+  background-image: url(./password.svg);
+}
+
+.dropdown__item--userIcon:hover::before {
+  background-image: url(./user-icon-active.svg);
+}
+
+.dropdown__item--pencilIcon:hover::before {
+  background-image: url(./pencil-edit-active.svg);
+}
+
+.dropdown__item--passwordIcon:hover::before {
+  background-image: url(./password-active.svg);
+}
