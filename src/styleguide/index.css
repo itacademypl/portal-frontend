@@ -20,6 +20,3 @@ body {
   flex-wrap: wrap;
 }
 
-.bg--blue {
-  background-color: var(--blue);
-}
