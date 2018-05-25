@@ -14,9 +14,9 @@
   min-width: 300px;
   background-color: var(--white);
   color: var(--dark-grey);
-  padding-top: 2.1rem;
-  padding-bottom: 1.8rem;
-  padding-left: 2.5rem;
+  padding-top: 1.5em;
+  padding-bottom: 1.29em;
+  padding-left: 1.79em;
   border-right: 2px solid var(--white);
   border-bottom: 2px solid var(--white);
   border-left: 2px solid var(--white);
@@ -34,21 +34,21 @@
   border-radius: 50%;
   border: 0.2em solid var(--white);
   background-image: url(./profile-icon.svg);
-  margin-right: 1.1rem;
+  margin-right: 0.79em;
 }
 
 .dropdown__header--open::before {
-  border: 0.3rem solid var(--light-blue);
+  border: 0.21em solid var(--light-blue);
 }
 
 .dropdown__header__openButton {
   content: "";
-  height: 21px;
-  width: 21px;
+  height: 1.5em;
+  width: 1.5em;
   border-radius: 50%;
   background-color: var(--light-grey);
   position: absolute;
-  right: 1.3rem;
+  right: 0.93em;
   background-image: url(./arrow-down.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -69,7 +69,7 @@
 .dropdown__item {
   display: flex;
   align-items: center;
-  padding: 1.2rem;
+  padding: 0.86em;
   color: var(--blue);
   background-color: var(--light-blue);
   border-right: 2px solid var(--white);
@@ -87,7 +87,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  padding: 1.2rem 3.6rem 1.2rem 2.8rem;
+  padding: 0.86em 2.57em 0.86em 2em;
 }
 
 .dropdown__item--userIcon::before {
