@@ -1,10 +1,10 @@
-.inputBox {
+.input {
   font-size: var(--smaller-size);
   width: 29.17em;
   border: 1px solid var(--light-grey);
 }
 
-.inputBox__container {
+.input__container {
   width: 29.1em;
   height: 5.36em;
   border-bottom: 1px solid var(--light-grey);
@@ -13,26 +13,26 @@
   font-family: var(--font-family);
 }
 
-.inputBox__container__inputContainer__icon {
+.input__container__inputContainer__icon {
   height: 1.5em;
   align-self: center;
   padding: 0 2.1em;
 }
 
-.inputBox__container__inputContainer__header {
+.input__container__inputContainer__header {
   color: var(--grey);
   line-height: 1.16em;
   padding: 0.16em;
 }
 
-.inputBox__container__inputContainer {
+.input__container__inputContainer {
   max-height: 3.42em;
   padding-left: 2.42em;
   border-left: 1px solid var(--light-grey);
   align-self: center;
 }
 
-.inputBox__container__inputContainer__input {
+.input__container__inputContainer__input {
   margin-top: 2px;
   width: 19em;
   border: 0;
@@ -40,26 +40,26 @@
   line-height: 1.16em;
 }
 
-.inputBox__container__inputContainer__input:focus {
+.input__container__inputContainer__input:focus {
   outline: none;
 }
 
-.inputBox--success {
+.input--success {
   border-left: 2px solid var(--success);
 }
 
-.inputBox__container__inputContainer__header--success {
+.input__container__inputContainer__header--success {
   color: var(--success);
 }
 
-.inputBox--danger {
+.input--danger {
   border-left: 2px solid var(--danger);
 }
 
-.inputBox__container__inputContainer__header--danger {
+.input__container__inputContainer__header--danger {
   color: var(--danger);
 }
 
-.inputBox--warning {
+.input--warning {
   border-left: 2px solid var(--warning);
 }
