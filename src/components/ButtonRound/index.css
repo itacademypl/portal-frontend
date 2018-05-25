@@ -1,4 +1,4 @@
-.roundBtn{
+.roundBtn {
   --bg: var(--light-grey);
 
   height: 3.6em;
@@ -12,7 +12,7 @@
   position: relative;
 }
 
-.roundBtn:hover{
+.roundBtn:hover {
   --bg: var(--grey);
 }
 
@@ -20,33 +20,34 @@
   background-image: url(./message.svg);
 }
 
-.roundBtn--bellIcon{
+.roundBtn--bellIcon {
   background-image: url(./bell.svg);
 }
 
-.roundBtn--arrowLeftIcon{
+.roundBtn--arrowLeftIcon {
   background-image: url(./arrow-left.svg);
 }
 
-.roundBtn--arrowRightIcon{
+.roundBtn--arrowRightIcon {
   background-image: url(./arrow-right.svg);
 }
 
-.roundBtn.roundBtn--messageIconDanger{
+.roundBtn.roundBtn--messageIconDanger {
   background-image: url(./message-danger.svg);
 }
 
-.roundBtn.roundBtn--bellIconDanger{
+.roundBtn.roundBtn--bellIconDanger {
   background-image: url(./bell-danger.svg);
 }
 
-.roundBtn.roundBtn--messageIconDanger::after, .roundBtn.roundBtn--bellIconDanger::after{
+.roundBtn.roundBtn--messageIconDanger::after,
+.roundBtn.roundBtn--bellIconDanger::after {
   position: absolute;
-  top:2px;
-  content: "";
+  top: 2px;
+  content: '';
   height: 0.6em;
   width: 0.6em;
-  background-color: #FF5847;
+  background-color: #ff5847;
   border-radius: 50%;
   right: 0;
   border: 0.2em solid white;

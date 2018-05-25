@@ -1,81 +1,65 @@
 .inputBox {
   font-size: var(--smaller-size);
-  position: relative;
-}
-
-.inputBox--bordered {
   width: 29.17em;
-  height: 10.82em;
-  border: 1px solid #EAEAEA;
+  border: 1px solid var(--light-grey);
 }
 
-.inputBox--inside--bordered {
+.inputBox__container {
   width: 29.1em;
   height: 5.36em;
-  border-bottom: 1px solid #EAEAEA;
+  border-bottom: 1px solid var(--light-grey);
   display: flex;
   flex-grow: 1;
-  flex-direction: column;
-  justify-content: space-around;
   font-family: var(--font-family);
 }
 
-.inputBox--user-icon {
-  position: absolute;
-  left: 2.16em;
-  top: 1.91em;
-  width: 1.42em;
+.inputBox__container__inputContainer__icon {
   height: 1.5em;
+  align-self: center;
+  padding: 0 2.1em;
 }
 
-.inputBox--user-key {
-  position: absolute;
-  left: 2.16em;
-  bottom: 1.83em;
-  width: 1.5em;
-  height: 1.5em;
-}
-
-.inputBox--header {
-  color: #BCBCBC;
+.inputBox__container__inputContainer__header {
+  color: var(--grey);
   line-height: 1.16em;
   padding: 0.16em;
 }
 
-.inputBox__email, .inputBox__password {
+.inputBox__container__inputContainer {
   max-height: 3.42em;
-  margin-left: 5.5em;
   padding-left: 2.42em;
-  border-left: 1px solid #EAEAEA;
+  border-left: 1px solid var(--light-grey);
+  align-self: center;
 }
 
-.inputBox--input {
+.inputBox__container__inputContainer__input {
   margin-top: 2px;
-  border: 1px solid;
   width: 19em;
   border: 0;
   font-weight: bold;
   line-height: 1.16em;
 }
 
-.inputBox--input:focus {
+.inputBox__container__inputContainer__input:focus {
   outline: none;
 }
 
-/* Correct credentials */
-.inputBox--bordered-correct {
-  border-left: 2px solid var(--dark-green);
+.inputBox--success {
+  border-left: 2px solid var(--success);
 }
 
-.inputBox--header-correct {
-  color: var(--dark-green);
+.inputBox__container__inputContainer__header--success {
+  color: var(--success);
 }
 
-/* Wrong credentials */
-.inputBox--bordered-wrong {
-  border-left: 2px solid var(--dark-red);
+.inputBox--danger {
+  border-left: 2px solid var(--danger);
 }
 
-.inputBox--header-wrong {
-  color: var(--dark-red);
+.inputBox__container__inputContainer__header--danger {
+  color: var(--danger);
+}
+
+.inputBox--warning {
+  border-left: 2px solid var(--warning);
 }
