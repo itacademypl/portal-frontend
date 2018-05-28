@@ -1,0 +1,8 @@
+.headline, .title {
+  font-weight: normal;
+  color: var(--black);
+}
+.bodyText, .menuText, .caption {
+  font-weight: bold;
+  color: var(--black);
+}

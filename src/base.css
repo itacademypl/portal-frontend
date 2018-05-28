@@ -29,7 +29,7 @@
   --font-family: '"Robot Regular"', Helvetica, Verdana, sans-serif;
   --regular-size: calc(var(--font-base-size) * 1.4);
   --smaller-size: calc(var(--font-base-size) * 1.2);
-  --h1-size: calc(var(--font-base-size) * 2.6);
+  --h1-size: calc(var(--font-base-size) * 2.8);
   --h2-size: calc(var(--font-base-size) * 2);
   --h3-size: var(--regular-size);
   --h4-size: var(--font-base-size);
