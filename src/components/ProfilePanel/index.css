@@ -59,11 +59,15 @@
 }
 
 .dropdown__content {
-  display: none;
+  position: absolute;
+  transform: rotateX(90deg);
+  transform-origin: 0 0;
+  width: 100%;
+  transition: all 0.2s;
 }
 
 .dropdown__content--open {
-  display: block;
+  transform: rotateX(0deg);
 }
 
 .dropdown__item {
