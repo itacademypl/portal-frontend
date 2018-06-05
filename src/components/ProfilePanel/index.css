@@ -27,8 +27,9 @@
   color: var(--white);
 }
 
-.dropdown__header::before, .dropdown__header--open::before {
-  content: "";
+.dropdown__header::before,
+.dropdown__header--open::before {
+  content: '';
   height: 3.57em;
   width: 3.57em;
   border-radius: 50%;
@@ -42,7 +43,7 @@
 }
 
 .dropdown__header__openButton {
-  content: "";
+  content: '';
   height: 21px;
   width: 21px;
   border-radius: 50%;
@@ -59,11 +60,15 @@
 }
 
 .dropdown__content {
-  display: none;
+  position: absolute;
+  transform: rotateX(90deg);
+  transform-origin: 0 0;
+  width: 100%;
+  transition: all 0.2s;
 }
 
 .dropdown__content--open {
-  display: block;
+  transform: rotateX(0deg);
 }
 
 .dropdown__item {
