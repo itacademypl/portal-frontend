@@ -55,6 +55,7 @@
 html {
   font-size: var(--font-base-size);
   font-family: var(--font-family);
+  color: var(--black);
 }
 
 body {
