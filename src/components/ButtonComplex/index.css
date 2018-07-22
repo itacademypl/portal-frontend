@@ -1,0 +1,62 @@
+.btn__complex{
+  --bg: #55BFFD;
+
+  text-transform: uppercase;
+  background-color: var(--bg);
+  border-radius: 4px;
+  padding: 0.86em 3.36em 0.86em 8.14em;
+  border: 0;
+  transform: none;
+  position: relative;
+}
+
+
+.btn__complex::before{
+  content: "";
+  background-color: var(--blue);
+  background-image: url(./new-user-icon.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  min-width: 67px;
+  min-height: 45px;
+  left: 0;
+  top: 0;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.btn__complex:hover,
+.btn__complex:active {
+  transform: none;
+}
+
+.btn__complex:hover::before,
+.btn__complex:active::before{
+  background-color: #55BFFD;
+}
+
+.btn__complex:hover:disabled{
+  background-color: var(--grey);
+}
+
+.btn__complex:hover:disabled::before,
+.btn__complex:disabled::before{
+  background-color: var(--dark-grey);
+}
+
+.btn__complex--green{
+  --bg: var(--green);
+}
+
+.btn__complex--green::before{
+  background-color: var(--dark-green);
+}
+
+.btn__complex--green:hover{
+  --bg: var(--dark-green);
+}
+
+.btn__complex--green:hover::before{
+  background-color: var(--green);
+}
